@@ -46,7 +46,7 @@ class AuthenticatedSessionController extends Controller
             $url = '/dashboard';
         }
 
-        return redirect()->intended($url)->with($notification);
+        return redirect()->intended($url)->with('log-in','log in');
     }
 
     /**
